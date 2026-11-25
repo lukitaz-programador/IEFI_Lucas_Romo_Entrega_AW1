@@ -5,19 +5,21 @@ Archivo: instalar_extensiones_chiavetta.bat
 USO CORRECTO
 1. En Windows 10/11, abrí el Explorador de archivos.
 2. Entrá en esta carpeta y hacé doble clic sobre instalar_extensiones_chiavetta.bat.
-3. El instalador detecta Cursor o Visual Studio Code y solicita la instalación de siete extensiones útiles.
-4. Revisá los mensajes [OK] y [AVISO]. Si alguna extensión no está disponible en Cursor, podés instalarla desde el panel Extensions.
+3. El instalador detecta Cursor o Visual Studio Code e instala cinco extensiones útiles para editar este proyecto: Prettier, EditorConfig, GitHub Actions, YAML y Path Intellisense.
+4. Revisá los mensajes [OK] y [AVISO]. Si alguna extensión no se instala, comprobá el panel Extensions del editor.
 
 IMPORTANTE
 - No pegues el contenido del archivo .bat dentro de Git Bash, PowerShell o la terminal integrada.
 - Ejecutalo como archivo desde el Explorador de Windows o desde CMD.
 - No requiere ejecutar como administrador.
-- Node.js 22 o superior debe estar instalado para ejecutar y verificar el proyecto.
+- HTML, CSS, JavaScript y JSON ya tienen soporte integrado en Cursor y Visual Studio Code; no necesitan extensiones adicionales.
+- Las extensiones no ejecutan el proyecto. Node.js 22 o superior y npm son necesarios para ejecutarlo y verificarlo; el instalador avisa si faltan.
 
 DESPUÉS DE INSTALAR
 1. Abrí en Cursor o VS Code la carpeta Codigo/Repositorio_Individual_Lucas_Romo.
 2. Abrí una terminal integrada en esa carpeta.
 3. Ejecutá: npm run dev
-4. Para verificar el proyecto: npm run verify
+4. Abrí en el navegador la dirección que indique el servidor (por defecto, http://localhost:4173).
+5. Para verificar el proyecto: npm run verify
 
 El proyecto no necesita npm install: no utiliza dependencias de terceros para su ejecución ni para las pruebas.
